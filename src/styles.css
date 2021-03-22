@@ -1,0 +1,21 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.btn-container {
+  width: 100%;
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  width: 200px;
+  padding: 5px;
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn:first-child {
+  margin-right: 5px;
+}
