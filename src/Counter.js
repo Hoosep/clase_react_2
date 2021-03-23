@@ -1,15 +1,19 @@
-import React, { useState, Fragment } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
 
   const handleClick = (aumentar) => {
     if (aumentar) {
-      setCount(count + 1);
+      setCount(count + 3);
     } else {
       setCount(count - 1);
     }
   };
+
+  useEffect(() => {
+    console.log(`Diste click ${count} veces`);
+  });
 
   return (
     <Fragment>
